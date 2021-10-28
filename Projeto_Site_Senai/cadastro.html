@@ -1,0 +1,132 @@
+<!doctype html>
+<html lang="pt-br">
+  <head>
+    <meta charset="utf-8">
+    <!-- <meta name="viewport" content="width=device-width, initial-scale=1"> -->
+    <!-- Link do CSS -->
+    <link rel="stylesheet" href="css/cadastro.css">
+
+    <!-- Bootstrap CSS -->
+    <!-- <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous"> -->
+
+    <title>Cadasto</title>
+  </head>
+  <body>
+
+    <!-- Menu onde esta apenas a LOGO no centro-->
+    <header class="header">
+        <nav class=" navbar-expand-lg navbar-light bg-light">
+         <div class="container">
+           <h2 class="text-center">Game Mania</h2>
+    </header>
+    <!------------------------------------------->
+    <main>
+        <div class="card" id="telacadastro">
+            <!-- Card pegado da area de cards do bootstrap e em seguida um formulario de login-->
+                <div class="card-body">
+
+                    <!-- inicio do formulario-->
+                    
+                    <form>
+                             
+                        <!-- Titulo com a informação de "Faça seu cadastro"-->
+                        <div class="mb-3">
+                            <h3 class="text-center">Faça seu cadastro</h3>
+                            <hr>
+
+                        <!-- Area do nome -->
+                            <label>Nome</label>
+                            <input type="name" class="form-control" id="" required autofocus>                       
+                        </div>
+
+                        <!-- Area do sobrenome -->
+                        <div class="mb-3">
+                            <label>Sobrenome</label>
+                            <input type="name" class="form-control" id="" required autofocus>                       
+                        </div>
+
+                        <!-- Area do Sexo -->
+                        <div class="mb-3">
+                            <label>Sexo: </label>
+                            <input type="radio" name="sexo" value="M" required autofocus>Masculino
+                            <input type="radio" name="sexo" value="F" required autofocus>Feminino
+                            <input type="radio" name="sexo" value="/" required autofocus> Outro...
+                        </div>
+
+                        <!-- Area da data de nascimento -->
+                        <div class="mb-3">
+                            <label>Data de nascimento</label>
+                            <input type="date" class="form-control" required autofocus>
+                        </div>
+
+                        <!-- Area do estado -->
+                        <div class="mb-3">
+                            <label>Estado</label>
+                            <select name="estado" class="form-contol" required autofocus>
+                                <option value="sp">SP</option>
+                                <option value="mj">MJ</option>
+                                <option value="RJ">RJ</option>
+                                <option value="bh">BH</option>
+                            </select>
+                        </div>
+
+                        <!-- Area do RG -->
+                        <div class="mb-3">
+                            <label>RG</label>
+                            <input type="text" class="form-control" required autofocus>
+                        </div>
+
+                        <!-- Area do Email -->
+                        <div class="mb-3">
+                            <label>Endereço de Email</label>
+                            <input type="email" class="form-control" id="" required autofocus>
+
+                        <!-- Area da Senha -->                 
+                        <div class="mb-3">
+                          <label for="exampleInputPassword1" class="form-label">Senha</label>
+                          <input type="password" class="form-control" id="">
+                        </div>
+
+                        <!-- Area para confirmar a Senha -->
+                        <div class="mb-3">
+                            <label for="exampleInputPassword1" class="form-label">Confirme sua senha</label>
+                            <input type="password" class="form-control" id="">
+                          </div>
+                        
+                        <!-- Area para seleção"lembrar de mim" -->
+                        <div class="mb-3 form-check">
+                          <input type="checkbox" class="form-check-input" id="">
+                          <label class="form-check-label" for="exampleCheck1">Lembrar de mim</label>
+                        </div>
+
+                        <!-- Area para a seleção obrigatória dos Termos -->
+                        <div class="mb-3 form-check">
+                            <input type="checkbox" class="form-check-input" id="" required autofocus>
+                            <label class="form-check-label" for="exampleCheck1">Estou ciente e CONCORDO com os <strong>termos de aceite e politica de privacidade da "GAME MANIA"</strong></label>
+                        </div>
+
+                        <!-- Botão de entrar -->
+                        <div class="d-grid gap-2">
+                            <button class="btn btn-outline-dark" type="submit">Cadastrar</button>
+                        </div>
+                        
+                        <!-- Area para direcionar para a area de LOGIN -->
+                        <div class="mb-3">
+                            <p class="text-center">Para fazer login <a href="logar.html"><strong>clique aqui !</strong></a></p>
+                        </div>
+                      </form>
+                        <!-- Fim do Formulario -->
+                </div>    
+        </div>     
+    </main>
+
+
+<!-- <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script> -->
+
+    <!-- Option 2: Separate Popper and Bootstrap JS -->
+    <!--
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js" integrity="sha384-7+zCNj/IqJ95wo16oMtfsKbZ9ccEh31eOz1HGyDuCQ6wgnyJNSYdrPa03rtR1zdB" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js" integrity="sha384-QJHtvGhmr9XOIpI6YVutG+2QOK9T+ZnN4kzFN1RtK3zEFEIsxhlmWl5/YESvpZ13" crossorigin="anonymous"></script>
+    -->
+  </body>
+</html>

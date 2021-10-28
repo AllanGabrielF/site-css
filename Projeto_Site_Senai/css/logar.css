@@ -1,0 +1,64 @@
+/* importação da font */
+@import url('https://fonts.googleapis.com/css2?family=MedievalSharp&display=swap');
+
+
+
+
+/*Estização do "corpo" do site para não ter barra de rolagem horizontal e fonts de todo site*/
+html, body{
+    background: black;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 15px;
+    line-height: 1.5;
+    box-sizing: border-box;
+    overflow-x: visible;
+    margin: 0;
+    top: 0;
+    left: 0;
+   
+}
+
+/*List-stle NONE, para que nenhum link no site fique em forma de "lista" ou seja um embaixo do outro*/
+ul{
+    list-style: none;
+}
+
+/*    INICIO DO CSS DO MENU    */
+
+/*tamanho e posicionamento do logo*/
+h2.text-center{
+    padding: 1rem 0;
+    display: block;
+    text-decoration: none;
+}
+/*Estilização do Texto do logo "Game Mania"*/
+h2.text-center{
+    font-family:'MedievalSharp';
+    font-size: 36px;
+    color: rgb(32, 32, 39);
+}
+/*    Fim do CSS do MENU     */
+
+
+/*   Inicio do CSS da area de Login   */
+#telalogin{
+    width: 350px;
+    /* area de posicionamento do "card" que é a rea de login */
+    position: absolute;
+    top: 50%;
+    left:50%;
+    transform: translate(-50%, -50%);
+    box-shadow: 1px 5px 30px rgb(177, 171, 171); /*Sombra em volta do card, para daar mais destaque nessa area*/
+}
+
+/* cor do fundo da tela */
+#fundo{
+    background: black;
+}
+
+/*defindo o posicionamento da area de direcionamento para a pagina de CADASTRO*/
+p#texto_cadastro{
+    margin-top: 30px;
+}
+
+/*   Fim do CSS da area de login  */

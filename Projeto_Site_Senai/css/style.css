@@ -1,0 +1,289 @@
+/* importação da font */
+@import url('https://fonts.googleapis.com/css2?family=MedievalSharp&display=swap');
+
+
+
+
+/*Estização do "corpo" do site para não ter barra de rolagem horizontal e fonts de todo site*/
+html, body{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 15px;
+    line-height: 1.5;
+    box-sizing: border-box;
+    overflow-x: visible;
+    margin: 0;
+    top: 0;
+    left: 0;
+   
+}
+/*Cor das letras dos links no menu*/
+
+
+/*List-stle NONE, para que nenhum link no site fique em forma de "lista" ou seja um embaixo do outro*/
+ul{
+    list-style: none;
+}
+
+
+/*estilização do "corpo" do Menu*/
+/*.navbar{
+    background:white;
+    padding: 3rem 2rem;
+    height: 0rem;
+    min-height: 12vh;*/
+
+
+/*    INICIO DO CSS DO MENU    */
+
+/*tamanho e posicionamento do logo*/
+.navbar .navbar-brand{
+    padding: 1rem 0;
+    display: block;
+    text-decoration: none;
+}
+/*Estilização do Texto do logo "Game Mania"*/
+.navbar-brand{
+    font-family:'MedievalSharp';
+    font-size: 34px;
+    color: rgb(32, 32, 39);
+}
+
+.navbar-toggler{
+    
+    border: none;
+    padding: 10px 6px;
+}
+/*posicionamento e estilização da fonte dos links*/
+.navbar-expand-lg .navbar-nav .nav-link{
+    padding: 2rem 1.2rem;
+    font-size: 1.1rem;
+    position: relative;
+    
+}
+/*efeitos ao passar o mouse em cima dos links do menu*/
+.navbar-expand-lg .navbar-nav .nav-link:hover{
+    border-bottom: 1px solid black;
+    transition: 0.3s;
+    
+}
+
+.navbar-nav button{
+    padding: 1.2rem;
+}
+
+/*estilização do botão de "cadastrar"*/
+.navbar-nav .btn {
+    background: white;
+    color: black;
+    border-radius: 0;
+    padding: 10px 27px;
+    font-size: 17px;
+    margin-top: -2px;
+    border-color: black;
+}
+
+.navbar-nav .btn:hover{
+    background: black;
+    color: white;
+    transition: 0.9s;
+}
+
+/*estilização do botão "Logar"*/
+.navbar-nav .bnt{
+    text-decoration: none;
+    background: black;
+    color: white;
+    border-radius: 0;
+    padding: 16px 40px;
+    font-size: 13px;
+    margin-top: -2px;
+    border-color: white;
+}
+
+/*estilização do texto "Minhas compras"*/
+.navbar-icone1{
+    text-decoration: none;
+    color: white;
+    font-size: 17px;
+}
+.navbar-icone1:hover{
+    cursor: pointer;
+    color: white;
+    border-bottom:3px solid white ;
+    transition: 0.1s;
+}
+/*estilização do botão "Pesquisar" ao passsar o mouse em cima*/
+.d-flex button:hover{
+    background: black;
+    color: white;
+    border-color: white;
+}
+/*cores do botão "pesquisar" alterado*/
+.btn-outline-success{
+    color: white;
+    border-color: white;
+}
+
+
+/*   Fim DO CSS DO MENU    */
+
+
+
+/*    Inicio do CSS do BANNER rotativo  */
+
+
+
+/*cursor pointer para que as imagens sejam clicaveis*/
+.carousel-inner:hover{
+    cursor: pointer;
+}
+
+/*estilização do tamanho do banner*/
+.carousel-item{
+    height: 100%;
+    min-height: 300px;
+
+}
+
+/*estilizando o link"monte agora"*/
+.carousel-caption p a{
+    bottom: 180px;
+    text-decoration: none;
+    color: red;
+}
+
+
+/*estilização do Link "montar agora" do banner ao passar o mouse por cima*/
+.carousel-caption p a:hover{
+    color: rgb(231, 98, 98);
+    transition: 0.5s;
+    font-size: 19px ;
+}
+ 
+
+/*    Fim do CSS do banner rotativo   */
+
+main{
+    background: black;  /*Cor do "corpo" da MAIN do site*/
+}
+
+/*    Inico do CSS da area de promoção  */
+
+
+
+/*Cor do background do ROW - (onde os produtos estão)*/
+.row{
+    background: rgb(243, 236, 236);
+}
+
+/*Delay que demora para animação do Slide quando passar*/
+.carousel .carousel-item {
+    transition-duration: 2.5s;
+}
+
+/*Distância da palavra "promoção" do topo*/
+.container h2{
+    padding-top: 50px;
+}
+
+/*estilização da linha em baixo da palavra "promoção" */
+hr{
+    border:3px solid white;
+}
+
+/*estilização do botão "comprar" */
+/*estilização do botão "COMPRAR"*/
+button#comprar.btn.btn-outline-success{
+    border-color: #198754;
+    color: #198754;    
+}
+/*estilização do botão "COMPRAR"*/
+button#comprar.btn.btn-outline-success:hover{
+    color: white;    
+}
+/*    fim do CSS da are de promoção  */
+
+
+/*     Inicio do CSS da area de "departamento"   */
+
+
+
+/*Cor da palavra"departamento"*/
+.container h2{
+    color: white;
+}
+
+
+/*estilização do texto nos produtos*/
+.produto-departamento{
+    text-decoration: none;
+    color: rgb(36, 35, 35);
+    text-transform: uppercase;
+}
+
+
+/*estilização do texto nos produtos ao passar o mouse por cima*/
+.produto-departamento:hover{
+    color: #0d6efd;
+    transition: .3s;
+
+
+}
+
+/*  Fim do CSS da area de "departamentos"   */
+
+
+
+/*  Inicio do CSS da area do rodapé  */
+
+/*color em volta do rodapé*/
+footer{
+    background: rgb(0, 0, 0);
+}
+
+/*background do rodapé*/
+.row.mt-3{
+    background: white;
+}
+
+/*estilização do logo do rodapé*/
+h6.mb-4.logo{
+    font-family: 'MedievalSharp';
+    margin-top: 70px;
+    font-size: 30px;
+    color: Black;
+}
+
+/*estilização dos titulos do rodapé*/
+h6.mb-4{
+    color: black;
+    margin-top: 20px;
+    font-size: 18px;
+}
+
+/*links da area de DEPARTAMENTOS*/
+.linksR{
+    color:black
+}
+/*links da area de DEPARTAMENTOS ao passar o mouse por cima*/
+.linksR:hover{
+    transition: 0.5s;
+}
+
+/*estilização da cor da area de copright*/
+.text-center.p-4{
+    color: rgb(248, 248, 248);
+}
+
+.copyr{
+    color: rgb(255, 255, 255);
+    text-decoration: none;
+    font-size: 14px;
+}
+
+.copyr:hover{
+    text-transform: uppercase;
+    color: rgb(255, 248, 248);
+}
+
+/*  Fim do CSS da area do rodaé  */
